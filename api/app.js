@@ -6,7 +6,7 @@ const {
 const { routerAPI } = require('./routes/router');
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Agregar middleware para analizar el cuerpo de la solicitud
 app.use(express.json());
