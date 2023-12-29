@@ -4,5 +4,11 @@
       "source": "/api/(.*)",
       "destination": "/api"
     }
+  ],
+  "builds": [
+    {
+      "src": "/api/app.js",
+      "use": "@now/node"
+    }
   ]
 }
